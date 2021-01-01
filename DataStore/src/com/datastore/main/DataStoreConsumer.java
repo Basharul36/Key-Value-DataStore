@@ -6,9 +6,9 @@ import org.json.simple.JSONObject;
 public class DataStoreConsumer {
 	public static void main(String[] args) {
 		JSONObject jsonObject = new JSONObject();
-		jsonObject.put("firstName", "John");
-		jsonObject.put("lastName", "Britto");
-		jsonObject.put("address", "Chennai");
+		jsonObject.put("firstName", "Mohamed");
+		jsonObject.put("lastName", "Basharul");
+		jsonObject.put("address", "Madurai");
 		System.out
 				.println("=============================================================");
 		System.out
@@ -32,7 +32,7 @@ public class DataStoreConsumer {
 			e.printStackTrace();
 		}
 		System.out.println("====================AFTER WAIT===============");
-		jsonObject.put("age", "25");
+		jsonObject.put("age", "21");
 		System.out.println(myDataStore.create("1", jsonObject, 10));
 		System.out.println(myDataStore.create("1", jsonObject));
 		System.out.println(myDataStore.create("1", jsonObject, 10));
